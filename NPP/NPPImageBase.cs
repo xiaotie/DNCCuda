@@ -1,4 +1,4 @@
-﻿//	Copyright (c) 2012, Michael Kunz. All rights reserved.
+//	Copyright (c) 2012, Michael Kunz. All rights reserved.
 //	http://kunzmi.github.io/managedCuda
 //
 //	This file is part of ManagedCuda.
@@ -451,48 +451,48 @@ namespace ManagedCuda.NPP
 				throw new CudaException(res);
 		}
 
-		/// <summary>
-		/// Copy data from a System.Drawing.Bitmap. There is no check if the bitmap pixel type corresponds to the current NPPImage!
-		/// </summary>
-		/// <param name="bitmap"></param>
-		public void CopyToDevice(Bitmap bitmap)
-		{
-			Rectangle rect = new Rectangle(0, 0, bitmap.Width, bitmap.Height);
-			System.Drawing.Imaging.PixelFormat format = bitmap.PixelFormat;
-			System.Drawing.Imaging.BitmapData data;
+		///// <summary>
+		///// Copy data from a System.Drawing.Bitmap. There is no check if the bitmap pixel type corresponds to the current NPPImage!
+		///// </summary>
+		///// <param name="bitmap"></param>
+		//public void CopyToDevice(Bitmap bitmap)
+		//{
+		//	Rectangle rect = new Rectangle(0, 0, bitmap.Width, bitmap.Height);
+		//	System.Drawing.Imaging.PixelFormat format = bitmap.PixelFormat;
+		//	System.Drawing.Imaging.BitmapData data;
 
-			data = bitmap.LockBits(rect, System.Drawing.Imaging.ImageLockMode.ReadOnly, format);
+		//	data = bitmap.LockBits(rect, System.Drawing.Imaging.ImageLockMode.ReadOnly, format);
 
-			try
-			{
-				CopyToDevice(data.Scan0, Math.Abs(data.Stride));
-			}
-			finally
-			{
-				bitmap.UnlockBits(data);
-			}
-		}
+		//	try
+		//	{
+		//		CopyToDevice(data.Scan0, Math.Abs(data.Stride));
+		//	}
+		//	finally
+		//	{
+		//		bitmap.UnlockBits(data);
+		//	}
+		//}
 
-		/// <summary>
-		/// Copy data to a System.Drawing.Bitmap. There is no check if the bitmap pixel type corresponds to the current NPPImage!
-		/// </summary>
-		/// <param name="bitmap"></param>
-		public void CopyToHost(Bitmap bitmap)
-		{
-			Rectangle rect = new Rectangle(0, 0, bitmap.Width, bitmap.Height);
-			System.Drawing.Imaging.PixelFormat format = bitmap.PixelFormat;
-			System.Drawing.Imaging.BitmapData data;
+		///// <summary>
+		///// Copy data to a System.Drawing.Bitmap. There is no check if the bitmap pixel type corresponds to the current NPPImage!
+		///// </summary>
+		///// <param name="bitmap"></param>
+		//public void CopyToHost(Bitmap bitmap)
+		//{
+		//	Rectangle rect = new Rectangle(0, 0, bitmap.Width, bitmap.Height);
+		//	System.Drawing.Imaging.PixelFormat format = bitmap.PixelFormat;
+		//	System.Drawing.Imaging.BitmapData data;
 
-			data = bitmap.LockBits(rect, System.Drawing.Imaging.ImageLockMode.WriteOnly, format);
-			try
-			{
-				CopyToHost(data.Scan0, Math.Abs(data.Stride));
-			}
-			finally
-			{
-				bitmap.UnlockBits(data);
-			}
-		}
+		//	data = bitmap.LockBits(rect, System.Drawing.Imaging.ImageLockMode.WriteOnly, format);
+		//	try
+		//	{
+		//		CopyToHost(data.Scan0, Math.Abs(data.Stride));
+		//	}
+		//	finally
+		//	{
+		//		bitmap.UnlockBits(data);
+		//	}
+		//}
 		#endregion
 
 		#region Copy Sync ROI
@@ -895,50 +895,50 @@ namespace ManagedCuda.NPP
 				throw new CudaException(res);
 		}
 
-		/// <summary>
-		/// Copy data from a System.Drawing.Bitmap. There is no check if the bitmap pixel type corresponds to the current NPPImage!
-		/// </summary>
-		/// <param name="bitmap">Source Bitmap</param>
-		/// <param name="roi">ROI of source image</param>
-		public void CopyToDeviceRoi(Bitmap bitmap, NppiRect roi)
-		{
-			Rectangle rect = new Rectangle(0, 0, bitmap.Width, bitmap.Height);
-			System.Drawing.Imaging.PixelFormat format = bitmap.PixelFormat;
-			System.Drawing.Imaging.BitmapData data;
+		///// <summary>
+		///// Copy data from a System.Drawing.Bitmap. There is no check if the bitmap pixel type corresponds to the current NPPImage!
+		///// </summary>
+		///// <param name="bitmap">Source Bitmap</param>
+		///// <param name="roi">ROI of source image</param>
+		//public void CopyToDeviceRoi(Bitmap bitmap, NppiRect roi)
+		//{
+		//	Rectangle rect = new Rectangle(0, 0, bitmap.Width, bitmap.Height);
+		//	System.Drawing.Imaging.PixelFormat format = bitmap.PixelFormat;
+		//	System.Drawing.Imaging.BitmapData data;
 
-			data = bitmap.LockBits(rect, System.Drawing.Imaging.ImageLockMode.ReadOnly, format);
+		//	data = bitmap.LockBits(rect, System.Drawing.Imaging.ImageLockMode.ReadOnly, format);
 
-			try
-			{
-				CopyToDeviceRoi(data.Scan0, Math.Abs(data.Stride), roi);
-			}
-			finally
-			{
-				bitmap.UnlockBits(data);
-			}
-		}
+		//	try
+		//	{
+		//		CopyToDeviceRoi(data.Scan0, Math.Abs(data.Stride), roi);
+		//	}
+		//	finally
+		//	{
+		//		bitmap.UnlockBits(data);
+		//	}
+		//}
 
-		/// <summary>
-		/// Copy data to a System.Drawing.Bitmap. There is no check if the bitmap pixel type corresponds to the current NPPImage!
-		/// </summary>
-		/// <param name="bitmap">Destination Bitmap</param>
-		/// <param name="roi">ROI of destination image</param>
-		public void CopyToHostRoi(Bitmap bitmap, NppiRect roi)
-		{
-			Rectangle rect = new Rectangle(0, 0, bitmap.Width, bitmap.Height);
-			System.Drawing.Imaging.PixelFormat format = bitmap.PixelFormat;
-			System.Drawing.Imaging.BitmapData data;
+		///// <summary>
+		///// Copy data to a System.Drawing.Bitmap. There is no check if the bitmap pixel type corresponds to the current NPPImage!
+		///// </summary>
+		///// <param name="bitmap">Destination Bitmap</param>
+		///// <param name="roi">ROI of destination image</param>
+		//public void CopyToHostRoi(Bitmap bitmap, NppiRect roi)
+		//{
+		//	Rectangle rect = new Rectangle(0, 0, bitmap.Width, bitmap.Height);
+		//	System.Drawing.Imaging.PixelFormat format = bitmap.PixelFormat;
+		//	System.Drawing.Imaging.BitmapData data;
 
-			data = bitmap.LockBits(rect, System.Drawing.Imaging.ImageLockMode.WriteOnly, format);
-			try
-			{
-				CopyToHostRoi(data.Scan0, Math.Abs(data.Stride), roi);
-			}
-			finally
-			{
-				bitmap.UnlockBits(data);
-			}
-		}
+		//	data = bitmap.LockBits(rect, System.Drawing.Imaging.ImageLockMode.WriteOnly, format);
+		//	try
+		//	{
+		//		CopyToHostRoi(data.Scan0, Math.Abs(data.Stride), roi);
+		//	}
+		//	finally
+		//	{
+		//		bitmap.UnlockBits(data);
+		//	}
+		//}
 		#endregion
 
 		#region AsyncDeviceToDevice

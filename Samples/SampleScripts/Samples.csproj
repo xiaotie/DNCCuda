@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\CudaBlas\CudaBlas.csproj" />
+    <ProjectReference Include="..\..\CudaFFT\CudaFFT.csproj" />
+    <ProjectReference Include="..\..\CudaRand\CudaRand.csproj" />
+    <ProjectReference Include="..\..\CudaSolve\CudaSolve.csproj" />
+    <ProjectReference Include="..\..\CudaSparse\CudaSparse.csproj" />
+    <ProjectReference Include="..\..\ManagedCUDA\ManagedCuda.csproj" />
+    <ProjectReference Include="..\..\NPP\NPP.csproj" />
+    <ProjectReference Include="..\..\NVGraph\NVGraph.csproj" />
+    <ProjectReference Include="..\..\Nvml\Nvml.csproj" />
+    <ProjectReference Include="..\..\NVRTC\NVRTC.csproj" />
+  </ItemGroup>
+
+</Project>
