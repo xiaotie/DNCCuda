@@ -1,4 +1,4 @@
-﻿//	Copyright (c) 2012, Michael Kunz. All rights reserved.
+//	Copyright (c) 2012, Michael Kunz. All rights reserved.
 //	http://kunzmi.github.io/managedCuda
 //
 //	This file is part of ManagedCuda.
@@ -33,10 +33,8 @@ namespace ManagedCuda.CudaSparse
 	/// <summary>
 	/// C# wrapper for cusparse.h
 	/// </summary>
-	public static class CudaSparseNativeMethods
+	public static partial class CudaSparseNativeMethods
 	{
-		internal const string CUSPARSE_API_DLL_NAME = "cusparse64_100";
-
 		#region CUSPARSE initialization and managment routines
 		/// <summary/>
 		[DllImport(CUSPARSE_API_DLL_NAME)]

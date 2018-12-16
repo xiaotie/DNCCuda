@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="..\Versions\CudaBlas.cs" Link="CudaBlas.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ManagedCUDA\ManagedCuda.csproj" />
   </ItemGroup>
 

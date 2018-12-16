@@ -1,4 +1,4 @@
-﻿//	Copyright (c) 2016, Michael Kunz. All rights reserved.
+//	Copyright (c) 2016, Michael Kunz. All rights reserved.
 //	http://kunzmi.github.io/managedCuda
 //
 //	This file is part of ManagedCuda.
@@ -33,10 +33,8 @@ namespace ManagedCuda.NVGraph
 	/// <summary>
 	/// C# wrapper for nvgraph.h
 	/// </summary>
-	public static class NVGraphNativeMathods
+	public static partial class NVGraphNativeMathods
 	{
-		internal const string NVGRAPH_API_DLL_NAME = "nvgraph64_80";
-
 		[DllImport(NVGRAPH_API_DLL_NAME, EntryPoint = "nvgraphStatusGetString")]
 		private static extern IntPtr nvgraphStatusGetStringInternal(nvgraphStatus status);
 

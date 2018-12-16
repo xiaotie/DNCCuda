@@ -1,4 +1,4 @@
-﻿//	Copyright (c) 2016, Michael Kunz. All rights reserved.
+//	Copyright (c) 2016, Michael Kunz. All rights reserved.
 //	http://kunzmi.github.io/managedCuda
 //
 //	This file is part of ManagedCuda.
@@ -28,11 +28,8 @@ using System.Runtime.InteropServices;
 
 namespace ManagedCuda.Nvml
 {
-	public static class NvmlNativeMethods
+	public static partial class NvmlNativeMethods
 	{
-		internal const string NVML_API_DLL_NAME = "nvml";
-
-
 		/// <summary>
 		/// Initialize NVML, but don't initialize any GPUs yet.
 		/// \note In NVML 5.319 new nvmlInit_v2 has replaced nvmlInit"_v1" (default in NVML 4.304 and older) that

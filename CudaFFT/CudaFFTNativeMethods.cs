@@ -1,4 +1,4 @@
-﻿//	Copyright (c) 2012, Michael Kunz. All rights reserved.
+//	Copyright (c) 2012, Michael Kunz. All rights reserved.
 //	http://kunzmi.github.io/managedCuda
 //
 //	This file is part of ManagedCuda.
@@ -31,11 +31,8 @@ namespace ManagedCuda.CudaFFT
 	/// <summary>
 	/// C# wrapper for the NVIDIA CUFFT API (--> cufft.h)
 	/// </summary>
-	public static class CudaFFTNativeMethods
+	public static partial class CudaFFTNativeMethods
 	{        
-		internal const string CUFFT_API_DLL_NAME = "cufft64_100";
-
-
 		/// <summary>
 		/// Creates a 1D FFT plan configuration for a specified signal size and data
 		/// type. The <c>batch</c> input parameter tells CUFFT how many 1D

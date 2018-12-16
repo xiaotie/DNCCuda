@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="..\Versions\NVRTC.cs" Link="NVRTC.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ManagedCUDA\ManagedCuda.csproj" />
   </ItemGroup>
 

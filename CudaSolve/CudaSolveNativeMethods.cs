@@ -1,4 +1,4 @@
-﻿//	Copyright (c) 2015, Michael Kunz. All rights reserved.
+//	Copyright (c) 2015, Michael Kunz. All rights reserved.
 //	http://kunzmi.github.io/managedCuda
 //
 //	This file is part of ManagedCuda.
@@ -33,17 +33,12 @@ using ManagedCuda.CudaSparse;
 namespace ManagedCuda.CudaSolve
 {
 	/// <summary/>
-	public static class CudaSolveNativeMethods
+	public static partial class CudaSolveNativeMethods
 	{
-#if _x64
-		internal const string CUSOLVE_API_DLL_NAME = "cusolver64_80.dll";
-#else
-		internal const string CUSOLVE_API_DLL_NAME = "cusolver32_80.dll";
-#endif
-		/// <summary>
-		/// The cuSolverDN library was designed to solve dense linear systems of the form Ax=B
-		/// </summary>
-		public static class Dense
+        /// <summary>
+        /// The cuSolverDN library was designed to solve dense linear systems of the form Ax=B
+        /// </summary>
+        public static class Dense
 		{
 			#region Init
 			/// <summary>

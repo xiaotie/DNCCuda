@@ -1,4 +1,4 @@
-﻿//	Copyright (c) 2014, Michael Kunz. All rights reserved.
+//	Copyright (c) 2014, Michael Kunz. All rights reserved.
 //	http://kunzmi.github.io/managedCuda
 //
 //	This file is part of ManagedCuda.
@@ -30,10 +30,8 @@ using ManagedCuda.BasicTypes;
 namespace ManagedCuda.NVRTC
 {
 	/// <summary/>
-	public static class NVRTCNativeMethods
+	public static partial class NVRTCNativeMethods
 	{
-		internal const string NVRTC_API_DLL_NAME = "nvrtc64_100";
-		
 		[DllImport(NVRTC_API_DLL_NAME, EntryPoint="nvrtcGetErrorString")]
         internal static extern IntPtr nvrtcGetErrorStringInternal(nvrtcResult result);
 

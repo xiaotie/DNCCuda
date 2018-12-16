@@ -1,4 +1,4 @@
-﻿//	Copyright (c) 2012, Michael Kunz. All rights reserved.
+//	Copyright (c) 2012, Michael Kunz. All rights reserved.
 //	http://kunzmi.github.io/managedCuda
 //
 //	This file is part of ManagedCuda.
@@ -31,11 +31,8 @@ namespace ManagedCuda.CudaBlas
 	/// <summary>
 	/// C# wrapper for cublas_v2.h and cublas_api.h
 	/// </summary>
-	public static class CudaBlasNativeMethods
+	public static partial class CudaBlasNativeMethods
 	{
-        //32bit is no more supported, only 64 bit...
-		internal const string CUBLAS_API_DLL_NAME = "cublas64_100";
-
 		#region Basics
 		/// <summary>
 		/// </summary>

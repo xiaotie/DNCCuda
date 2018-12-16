@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="..\Versions\NPP.cs" Link="NPP.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ManagedCUDA\ManagedCuda.csproj" />
   </ItemGroup>
 

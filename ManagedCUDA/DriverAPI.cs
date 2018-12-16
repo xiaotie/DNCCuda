@@ -1,4 +1,4 @@
-﻿//	Copyright (c) 2012, Michael Kunz. All rights reserved.
+//	Copyright (c) 2012, Michael Kunz. All rights reserved.
 //	http://kunzmi.github.io/managedCuda
 //
 //	This file is part of ManagedCuda.
@@ -32,9 +32,8 @@ namespace ManagedCuda
     /// <summary>
     /// C# wrapper for the NVIDIA CUDA Driver API (--> cuda.h)
     /// </summary>
-    public static class DriverAPINativeMethods
+    public static partial class DriverAPINativeMethods
     {
-		internal const string CUDA_DRIVER_API_DLL_NAME = "nvcuda";
 		internal const string CUDA_OBSOLET_4_0 = "Don't use this CUDA API call with CUDA version >= 4.0.";
 		internal const string CUDA_OBSOLET_5_0 = "Don't use this CUDA API call with CUDA version >= 5.0.";
 		internal const string CUDA_OBSOLET_9_2 = "Don't use this CUDA API call with CUDA version >= 9.2.";

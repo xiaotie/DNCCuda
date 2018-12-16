@@ -1,4 +1,4 @@
-﻿//	Copyright (c) 2012, Michael Kunz. All rights reserved.
+//	Copyright (c) 2012, Michael Kunz. All rights reserved.
 //	http://kunzmi.github.io/managedCuda
 //
 //	This file is part of ManagedCuda.
@@ -32,11 +32,8 @@ namespace ManagedCuda.CudaRand
 	/// <summary>
 	/// C# Wrapper-Methods for CuRand functions defined in curand.h
 	/// </summary>
-	public static class CudaRandNativeMethods
+	public static partial class CudaRandNativeMethods
 	{
-		internal const string CURAND_API_DLL_NAME = "curand64_10";
-
-
 		/// <summary>
 		/// Creates a new random number generator of type rng_type and returns it in ref generator.
 		/// </summary>
