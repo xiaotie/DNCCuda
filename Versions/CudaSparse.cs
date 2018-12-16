@@ -7,6 +7,6 @@ namespace ManagedCuda.CudaSparse
     /// </summary>
     public static partial class CudaSparseNativeMethods
     {
-        internal const string CUSPARSE_API_DLL_NAME = "cusparse64_100";
+        internal const string CUSPARSE_API_DLL_NAME = "cusparse64_80";
     }
 }

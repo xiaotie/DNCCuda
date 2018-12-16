@@ -7,6 +7,6 @@ namespace ManagedCuda.CudaFFT
     /// </summary>
     public static partial class CudaFFTNativeMethods
     {
-        internal const string CUFFT_API_DLL_NAME = "cufft64_100";
+        internal const string CUFFT_API_DLL_NAME = "cufft64_80";
     }
 }

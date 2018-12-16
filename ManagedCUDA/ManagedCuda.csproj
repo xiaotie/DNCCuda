@@ -16,4 +16,8 @@
     <Compile Include="..\Versions\ManagedCUDA.cs" Link="ManagedCUDA.cs" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
 </Project>
