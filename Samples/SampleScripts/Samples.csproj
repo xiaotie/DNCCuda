@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\CudaBlas\CudaBlas.csproj" />
+    <ProjectReference Include="..\..\CudaDNN\CudaDNN.csproj" />
     <ProjectReference Include="..\..\CudaFFT\CudaFFT.csproj" />
     <ProjectReference Include="..\..\CudaRand\CudaRand.csproj" />
     <ProjectReference Include="..\..\CudaSolve\CudaSolve.csproj" />

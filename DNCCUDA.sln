@@ -27,6 +27,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples", "Samples\SampleSc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Versions", "Versions\Versions.csproj", "{6C1CBE34-18E5-42DF-8811-2B60C5C751B1}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CudaDNN", "CudaDNN\CudaDNN.csproj", "{C39D8EA9-6E6C-4D3F-9137-56089B857A58}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -331,6 +333,30 @@ Global
 		{6C1CBE34-18E5-42DF-8811-2B60C5C751B1}.Release|x64.Build.0 = Release|Any CPU
 		{6C1CBE34-18E5-42DF-8811-2B60C5C751B1}.Release|x86.ActiveCfg = Release|Any CPU
 		{6C1CBE34-18E5-42DF-8811-2B60C5C751B1}.Release|x86.Build.0 = Release|Any CPU
+		{C39D8EA9-6E6C-4D3F-9137-56089B857A58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C39D8EA9-6E6C-4D3F-9137-56089B857A58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C39D8EA9-6E6C-4D3F-9137-56089B857A58}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{C39D8EA9-6E6C-4D3F-9137-56089B857A58}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{C39D8EA9-6E6C-4D3F-9137-56089B857A58}.Debug|NuGet_x64.ActiveCfg = Debug|Any CPU
+		{C39D8EA9-6E6C-4D3F-9137-56089B857A58}.Debug|NuGet_x64.Build.0 = Debug|Any CPU
+		{C39D8EA9-6E6C-4D3F-9137-56089B857A58}.Debug|NuGet_x86.ActiveCfg = Debug|Any CPU
+		{C39D8EA9-6E6C-4D3F-9137-56089B857A58}.Debug|NuGet_x86.Build.0 = Debug|Any CPU
+		{C39D8EA9-6E6C-4D3F-9137-56089B857A58}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C39D8EA9-6E6C-4D3F-9137-56089B857A58}.Debug|x64.Build.0 = Debug|Any CPU
+		{C39D8EA9-6E6C-4D3F-9137-56089B857A58}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C39D8EA9-6E6C-4D3F-9137-56089B857A58}.Debug|x86.Build.0 = Debug|Any CPU
+		{C39D8EA9-6E6C-4D3F-9137-56089B857A58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C39D8EA9-6E6C-4D3F-9137-56089B857A58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C39D8EA9-6E6C-4D3F-9137-56089B857A58}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C39D8EA9-6E6C-4D3F-9137-56089B857A58}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{C39D8EA9-6E6C-4D3F-9137-56089B857A58}.Release|NuGet_x64.ActiveCfg = Release|Any CPU
+		{C39D8EA9-6E6C-4D3F-9137-56089B857A58}.Release|NuGet_x64.Build.0 = Release|Any CPU
+		{C39D8EA9-6E6C-4D3F-9137-56089B857A58}.Release|NuGet_x86.ActiveCfg = Release|Any CPU
+		{C39D8EA9-6E6C-4D3F-9137-56089B857A58}.Release|NuGet_x86.Build.0 = Release|Any CPU
+		{C39D8EA9-6E6C-4D3F-9137-56089B857A58}.Release|x64.ActiveCfg = Release|Any CPU
+		{C39D8EA9-6E6C-4D3F-9137-56089B857A58}.Release|x64.Build.0 = Release|Any CPU
+		{C39D8EA9-6E6C-4D3F-9137-56089B857A58}.Release|x86.ActiveCfg = Release|Any CPU
+		{C39D8EA9-6E6C-4D3F-9137-56089B857A58}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
