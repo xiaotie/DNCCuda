@@ -1,4 +1,4 @@
-﻿//	Copyright (c) 2015, Michael Kunz. All rights reserved.
+//	Copyright (c) 2015, Michael Kunz. All rights reserved.
 //	http://kunzmi.github.io/managedCuda
 //
 //	This file is part of ManagedCuda.
@@ -30,9 +30,8 @@ using ManagedCuda.VectorTypes;
 namespace ManagedCuda.CudaDNN
 {
 	/// <summary/>
-	public static class CudaDNNNativeMethods
+	public static partial class CudaDNNNativeMethods
 	{
-		internal const string CUDNN_API_DLL_NAME = "cudnn64_7.dll";
 		/// <summary>
 		/// Gives the version of the wrapped api
 		/// </summary>
